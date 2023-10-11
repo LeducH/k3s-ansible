@@ -69,6 +69,10 @@ If multiple hosts are in the master group, the playbook will automatically set u
 
 Finally, copy `ansible.example.cfg` to `ansible.cfg` and adapt the inventory path to match the files that you just created.
 
+```bash
+cp  ansible.example.cfg ansible.cfg
+```
+
 This requires at least k3s version `1.19.1` however the version is configurable by using the `k3s_version` variable.
 
 If needed, you can also edit `inventory/my-cluster/group_vars/all.yml` to match your environment.
